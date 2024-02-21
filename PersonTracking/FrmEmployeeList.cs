@@ -31,5 +31,13 @@ namespace PersonTracking
         {
             this.Close(); 
         }
+
+        private void txtAdd_Click(object sender, EventArgs e)
+        {
+            FrmEmployee frm = new FrmEmployee();
+            this.Hide();
+            frm.ShowDialog();
+            this.Visible = true;    
+        }
     }
 }

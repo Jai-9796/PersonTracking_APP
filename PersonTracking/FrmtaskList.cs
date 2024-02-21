@@ -41,5 +41,22 @@ namespace PersonTracking
         {
              
         }
+
+        private void txtNew_Click(object sender, EventArgs e)
+        { 
+            Frmtask frm = new Frmtask();
+            this.Hide();
+            frm.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void txtUpdate_Click(object sender, EventArgs e)
+        {
+            Frmtask frm = new Frmtask();
+            this.Hide();
+            frm.ShowDialog();
+            this.Visible = true;
+
+        }
     }
 }

@@ -21,5 +21,15 @@ namespace PersonTracking
         {
             this.Close();   
         }
+
+        private void txtAdd_Click(object sender, EventArgs e)
+        {
+            Department frm = new Department(); 
+            this.Hide();
+            frm.ShowDialog();   
+            this.Visible = true;    
+            
+           
+        }
     }
 }

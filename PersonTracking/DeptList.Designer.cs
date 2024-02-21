@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.txtAdd = new System.Windows.Forms.Button();
+            this.txtnew = new System.Windows.Forms.Button();
             this.txtUpdate = new System.Windows.Forms.Button();
             this.txtDelete = new System.Windows.Forms.Button();
             this.txtClose = new System.Windows.Forms.Button();
@@ -47,14 +47,15 @@
             this.dataGridView1.Size = new System.Drawing.Size(800, 287);
             this.dataGridView1.TabIndex = 0;
             // 
-            // txtAdd
+            // txtnew
             // 
-            this.txtAdd.Location = new System.Drawing.Point(12, 357);
-            this.txtAdd.Name = "txtAdd";
-            this.txtAdd.Size = new System.Drawing.Size(185, 61);
-            this.txtAdd.TabIndex = 1;
-            this.txtAdd.Text = "Add";
-            this.txtAdd.UseVisualStyleBackColor = true;
+            this.txtnew.Location = new System.Drawing.Point(12, 357);
+            this.txtnew.Name = "txtnew";
+            this.txtnew.Size = new System.Drawing.Size(185, 61);
+            this.txtnew.TabIndex = 1;
+            this.txtnew.Text = "new";
+            this.txtnew.UseVisualStyleBackColor = true;
+            this.txtnew.Click += new System.EventHandler(this.txtAdd_Click);
             // 
             // txtUpdate
             // 
@@ -92,7 +93,7 @@
             this.Controls.Add(this.txtClose);
             this.Controls.Add(this.txtDelete);
             this.Controls.Add(this.txtUpdate);
-            this.Controls.Add(this.txtAdd);
+            this.Controls.Add(this.txtnew);
             this.Controls.Add(this.dataGridView1);
             this.Name = "DeptList";
             this.Text = "DeptList";
@@ -104,7 +105,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button txtAdd;
+        private System.Windows.Forms.Button txtnew;
         private System.Windows.Forms.Button txtUpdate;
         private System.Windows.Forms.Button txtDelete;
         private System.Windows.Forms.Button txtClose;

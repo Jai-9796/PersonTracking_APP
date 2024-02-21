@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PersonTracking
 {
-    public partial class FrmPosition : Form
+    public partial class frmposition: Form
     {
-        public FrmPosition()
+        public frmposition()
         {
             InitializeComponent();
         }

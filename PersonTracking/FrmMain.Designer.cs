@@ -28,27 +28,69 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.txtTasks = new System.Windows.Forms.Button();
-            this.txtSalary = new System.Windows.Forms.Button();
-            this.txtpermission = new System.Windows.Forms.Button();
-            this.Department = new System.Windows.Forms.Button();
             this.txtPosition = new System.Windows.Forms.Button();
+            this.Department = new System.Windows.Forms.Button();
+            this.txtpermission = new System.Windows.Forms.Button();
+            this.txtSalary = new System.Windows.Forms.Button();
+            this.txtTasks = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // txtPosition
             // 
-            this.button1.Image = global::PersonTracking.Properties.Resources.Image;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.Location = new System.Drawing.Point(42, 28);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(213, 125);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Employee";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.txtPosition.Image = global::PersonTracking.Properties.Resources.Image;
+            this.txtPosition.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.txtPosition.Location = new System.Drawing.Point(876, 255);
+            this.txtPosition.Name = "txtPosition";
+            this.txtPosition.Size = new System.Drawing.Size(213, 125);
+            this.txtPosition.TabIndex = 5;
+            this.txtPosition.Text = "Position";
+            this.txtPosition.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.txtPosition.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.txtPosition.UseVisualStyleBackColor = true;
+            this.txtPosition.Click += new System.EventHandler(this.txtPosition_Click);
+            // 
+            // Department
+            // 
+            this.Department.Image = global::PersonTracking.Properties.Resources.Image;
+            this.Department.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Department.Location = new System.Drawing.Point(502, 255);
+            this.Department.Name = "Department";
+            this.Department.Size = new System.Drawing.Size(213, 125);
+            this.Department.TabIndex = 4;
+            this.Department.Text = "txtDepartment";
+            this.Department.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Department.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.Department.UseVisualStyleBackColor = true;
+            this.Department.Click += new System.EventHandler(this.Department_Click);
+            // 
+            // txtpermission
+            // 
+            this.txtpermission.Image = global::PersonTracking.Properties.Resources.Image;
+            this.txtpermission.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.txtpermission.Location = new System.Drawing.Point(42, 255);
+            this.txtpermission.Name = "txtpermission";
+            this.txtpermission.Size = new System.Drawing.Size(213, 125);
+            this.txtpermission.TabIndex = 3;
+            this.txtpermission.Text = "txtpermission";
+            this.txtpermission.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.txtpermission.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.txtpermission.UseVisualStyleBackColor = true;
+            this.txtpermission.Click += new System.EventHandler(this.txtpermission_Click);
+            // 
+            // txtSalary
+            // 
+            this.txtSalary.Image = global::PersonTracking.Properties.Resources.Image;
+            this.txtSalary.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.txtSalary.Location = new System.Drawing.Point(876, 41);
+            this.txtSalary.Name = "txtSalary";
+            this.txtSalary.Size = new System.Drawing.Size(213, 125);
+            this.txtSalary.TabIndex = 2;
+            this.txtSalary.Text = "Salary";
+            this.txtSalary.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.txtSalary.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.txtSalary.UseVisualStyleBackColor = true;
+            this.txtSalary.Click += new System.EventHandler(this.txtSalary_Click);
             // 
             // txtTasks
             // 
@@ -63,58 +105,21 @@
             this.txtTasks.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.txtTasks.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.txtTasks.UseVisualStyleBackColor = true;
+            this.txtTasks.Click += new System.EventHandler(this.txtTasks_Click);
             // 
-            // txtSalary
+            // button1
             // 
-            this.txtSalary.Image = global::PersonTracking.Properties.Resources.Image;
-            this.txtSalary.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.txtSalary.Location = new System.Drawing.Point(876, 41);
-            this.txtSalary.Name = "txtSalary";
-            this.txtSalary.Size = new System.Drawing.Size(213, 125);
-            this.txtSalary.TabIndex = 2;
-            this.txtSalary.Text = "Salary";
-            this.txtSalary.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.txtSalary.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.txtSalary.UseVisualStyleBackColor = true;
-            // 
-            // txtpermission
-            // 
-            this.txtpermission.Image = global::PersonTracking.Properties.Resources.Image;
-            this.txtpermission.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.txtpermission.Location = new System.Drawing.Point(42, 255);
-            this.txtpermission.Name = "txtpermission";
-            this.txtpermission.Size = new System.Drawing.Size(213, 125);
-            this.txtpermission.TabIndex = 3;
-            this.txtpermission.Text = "txtpermission";
-            this.txtpermission.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.txtpermission.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.txtpermission.UseVisualStyleBackColor = true;
-            // 
-            // Department
-            // 
-            this.Department.Image = global::PersonTracking.Properties.Resources.Image;
-            this.Department.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Department.Location = new System.Drawing.Point(502, 255);
-            this.Department.Name = "Department";
-            this.Department.Size = new System.Drawing.Size(213, 125);
-            this.Department.TabIndex = 4;
-            this.Department.Text = "txtDepartment";
-            this.Department.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.Department.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.Department.UseVisualStyleBackColor = true;
-            // 
-            // txtPosition
-            // 
-            this.txtPosition.Image = global::PersonTracking.Properties.Resources.Image;
-            this.txtPosition.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.txtPosition.Location = new System.Drawing.Point(876, 255);
-            this.txtPosition.Name = "txtPosition";
-            this.txtPosition.Size = new System.Drawing.Size(213, 125);
-            this.txtPosition.TabIndex = 5;
-            this.txtPosition.Text = "Position";
-            this.txtPosition.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.txtPosition.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.txtPosition.UseVisualStyleBackColor = true;
+            this.button1.Image = global::PersonTracking.Properties.Resources.Image;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.Location = new System.Drawing.Point(42, 28);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(213, 125);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Employee";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmMain
             // 

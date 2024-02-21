@@ -10,28 +10,27 @@ using System.Windows.Forms;
 
 namespace PersonTracking
 {
-    public partial class FrmPermissionList : Form
+    public partial class FrmsalaryList : Form
     {
-        public FrmPermissionList()
+        public FrmsalaryList()
         {
             InitializeComponent();
         }
 
-        private void txtnew_Click(object sender, EventArgs e)
+        private void txtNew_Click(object sender, EventArgs e)
         {
-            FrmPermission frm = new FrmPermission();
+            Frmsalary frm =  new Frmsalary();
             this.Hide();
-            frm.ShowDialog();
-            this.Visible = true;
+            frm.ShowDialog();   
+            this.Visible = true;    
         }
 
         private void txtUpdate_Click(object sender, EventArgs e)
         {
-            FrmPermission frm = new FrmPermission();
+            Frmsalary frm = new Frmsalary();
             this.Hide();
             frm.ShowDialog();
             this.Visible = true;
-
         }
     }
 }

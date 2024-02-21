@@ -39,7 +39,7 @@
             this.Name = new System.Windows.Forms.Label();
             this.txtDepartment = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.NewFrm = new System.Windows.Forms.TextBox();
             this.Surname = new System.Windows.Forms.Label();
             this.txtPosition = new System.Windows.Forms.TextBox();
             this.Position = new System.Windows.Forms.Label();
@@ -82,8 +82,9 @@
             this.txtAdd.Name = "txtAdd";
             this.txtAdd.Size = new System.Drawing.Size(185, 61);
             this.txtAdd.TabIndex = 5;
-            this.txtAdd.Text = "Add";
+            this.txtAdd.Text = "New";
             this.txtAdd.UseVisualStyleBackColor = true;
+            this.txtAdd.Click += new System.EventHandler(this.txtAdd_Click);
             // 
             // dataGridView1
             // 
@@ -145,12 +146,12 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Dep";
             // 
-            // textBox1
+            // NewFrm
             // 
-            this.textBox1.Location = new System.Drawing.Point(118, 84);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(189, 22);
-            this.textBox1.TabIndex = 17;
+            this.NewFrm.Location = new System.Drawing.Point(118, 84);
+            this.NewFrm.Name = "NewFrm";
+            this.NewFrm.Size = new System.Drawing.Size(189, 22);
+            this.NewFrm.TabIndex = 17;
             // 
             // Surname
             // 
@@ -204,7 +205,7 @@
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.txtPosition);
             this.Controls.Add(this.Position);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.NewFrm);
             this.Controls.Add(this.Surname);
             this.Controls.Add(this.txtDepartment);
             this.Controls.Add(this.label1);
@@ -238,7 +239,7 @@
         private System.Windows.Forms.Label Name;
         private System.Windows.Forms.TextBox txtDepartment;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox NewFrm;
         private System.Windows.Forms.Label Surname;
         private System.Windows.Forms.TextBox txtPosition;
         private System.Windows.Forms.Label Position;

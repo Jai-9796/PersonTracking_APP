@@ -34,7 +34,10 @@ namespace PersonTracking
 
         private void txtAdd_Click(object sender, EventArgs e)
         {
-
+            frmposition frmposition = new frmposition();
+            this.Hide(); 
+            frmposition.ShowDialog();
+            this.Visible = true;    
         }
     }
 }

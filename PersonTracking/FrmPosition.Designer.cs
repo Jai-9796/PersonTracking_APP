@@ -1,6 +1,6 @@
 ﻿namespace PersonTracking
 {
-    partial class FrmPosition
+    partial class frmposition
     {
         /// <summary>
         /// Required designer variable.
